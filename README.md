@@ -30,6 +30,7 @@ Deskless is a social app that allows remote workers to connect with each other a
 * Users can view working locations in close proximity to their location such as restaurants, co-working and/or co-living space
 * Users can also rate locations and leave reviews as well 
 * Users can create events where other users can opt in via the homefeed
+* Users can limit how many attendees can attend their event
 
 
 **Optional Stories**
@@ -37,31 +38,49 @@ Deskless is a social app that allows remote workers to connect with each other a
 * Users can tag and message other users
 * Users can share locations via link
 
+
 ### 2. Screen Archetypes
 
-* [list first screen here]
-   * [list associated required story here]
-   * ...
-* [list second screen here]
-   * [list associated required story here]
-   * ...
+* Login 
+   * User can login to their profile
+
+* Homefeed/ Stream
+   * User can view events posted by other users
+
+* Creation
+   * User can create their own events and allow others to register within its limit
+
+* Location
+   * User can search for, and/or view remote working locations
+
+* Profile
+   * User can create the profile based on work place, and interests
+
+* Setting
+   * User can update their profile
+
 
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* Homefeed
+* Search/ view locations in user's current location
+* Post an event
 
 **Flow Navigation** (Screen to Screen)
 
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
+Login Screen
+=> Home
+User registration Screen
+=> Home
+Homefeed Screen
+=> Event registration screen
+Creation Screen
+=> Home (after you finish posting an event)
+
+Search Screen
+=> None
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
