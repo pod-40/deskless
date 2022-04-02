@@ -67,6 +67,7 @@ Deskless is a social app that allows remote workers to connect with each other a
 * Homefeed
 * Search/ view locations in user's current location
 * Post an event
+* Setting
 
 **Flow Navigation** (Screen to Screen)
 
