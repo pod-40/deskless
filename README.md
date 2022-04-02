@@ -85,7 +85,7 @@ Search Screen
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+<img src="https://user-images.githubusercontent.com/74329250/161358070-cf82277b-ccff-4891-b4d5-6b362e1c992d.jpeg" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
 
@@ -94,7 +94,8 @@ Search Screen
 ## Schema 
 [This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+[Add table of models]![wireframe]()
+
 ### Networking
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
