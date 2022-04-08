@@ -141,6 +141,21 @@ Model: User Profile
 
 
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+User Profile Screen
+* (Read/GET) Query logged in user object.
+* (Update/PUT) Update user profile image.
+* (Update/PUT) update user role.
+
+Create Post Screen
+* (Create/POST) Create a new post object.
+
+Home Feed where users see events
+* (Read/GET) Query all posts.
+* (Create/POST) Create a new join on a post to join an event.
+* (Delete) Delete an existing join on a post to withdraw from a post.
+
+Location screen
+* (Read/GET) Query all events at places close by within a certain raduis.
+
+
+[Create basic snippets for each Parse network request][OPTIONAL: List endpoints if using existing API such as Yelp]
