@@ -87,14 +87,55 @@ Search Screen
 [Add picture of your hand sketched wireframes in this section]
 <img src="https://user-images.githubusercontent.com/74329250/161358070-cf82277b-ccff-4891-b4d5-6b362e1c992d.jpeg" width=600>
 
+
+
 ### [BONUS] Digital Wireframes & Mockups
 
 ### [BONUS] Interactive Prototype
 
 ## Schema 
 [This section will be completed in Unit 9]
+
 ### Models
-[Add table of models]![wireframe]()
+Model: User Login and Sign Up
+| Property      | Type  | Description |
+| :------------ |:---------------| :-----|
+| username      | String          |stores the username of the login user  |
+| password      | String          |stores the password of the user |
+| email         | String          |stores the email of the user |
+| firstname     | String          |stores the firstname of the user |
+| lastname      | String          |stores the lastname of the user |
+| role          | String          |stores the role of the user |
+| createdAt     | DateTime         |date when post is created (default field)|
+| updatedAt     | DateTime          |date when post is last updated (default field)|
+
+
+Model: Post
+| Property  | Type  | Description |
+| :------------ |:---------------| :-----|
+| authorRole     | pointer to role  |post author's role|
+| author      | pointer to user  |post author|
+| location      | geolocation  |stores the location of the post|
+| image     | file       |  stores the image to be posted |
+| description | String        |  stores the description of the user |
+| createdAt     |DateTime         |date when post is created (default field)|
+
+
+Model: User Profile
+| Property      | Type  | Description |
+| :------------ |:---------------| :-----|
+| username      | String          |stores the username of the login user  |
+| password      | String          |stores the password of the user |
+| email         | String          |stores the email of the user |
+| firstname     | String          |stores the firstname of the user |
+| lastname      | String          |stores the lastname of the user |
+| role          | String          |stores the role of the user |
+| createdAt     | DateTime         |date when post is created (default field)|
+| updatedAt     | DateTime          |date when post is last updated (default field)|
+| profileImage     | file       |  stores the profile image to be posted |
+
+
+
 
 ### Networking
 - [Add list of network requests by screen ]
