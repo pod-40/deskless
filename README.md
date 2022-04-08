@@ -91,6 +91,9 @@ Search Screen
 
 ### [BONUS] Digital Wireframes & Mockups
 
+<img width="771" alt="Screen Shot 2022-04-08 at 2 23 57 AM" src="https://user-images.githubusercontent.com/74329250/162376915-43c43ab5-0dea-4496-ad2e-ef46acb1af3e.png">
+
+
 ### [BONUS] Interactive Prototype
 
 ## Schema 
