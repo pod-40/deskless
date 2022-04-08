@@ -122,6 +122,11 @@ Model: Post
 | image     | file       |  stores the image to be posted |
 | description | String        |  stores the description of the user |
 | createdAt     |DateTime         |date when post is created (default field)|
+|vibe   | String| Stores the atmosphere expected at the event|
+|amenities|String|Stores the necessary qualities at the event|
+|maxAmountofPeople|Integer|stores the maximum number of people allowed at the event|
+|timePeriod|Float|stores the duration of the event in hours|
+
 
 
 Model: User Profile
@@ -152,10 +157,65 @@ Create Post Screen
 Home Feed where users see events
 * (Read/GET) Query all posts.
 * (Create/POST) Create a new join on a post to join an event.
-* (Delete) Delete an existing join on a post to withdraw from a post.
+* (Delete) Delete an existing join on a post to withdraw from a posted event.
 
 Location screen
 * (Read/GET) Query all events at places close by within a certain raduis.
 
 
-[Create basic snippets for each Parse network request][OPTIONAL: List endpoints if using existing API such as Yelp]
+[Create basic snippets for each Parse network request]
+* Delete
+```swift
+myObject.deleteInBackground();
+```
+
+* Create
+ ```swift
+ParseObject post = new ParseObject("Post");
+post.put("author", authorObject);
+post.put("authorRole", "Software Engineer");
+post.put("location", locationObject);
+post.put("vibe", "Quite");
+post.put("amenities", "wifi");
+post.put("timePeriod", 1);
+post.put("maxNumofPeople", 10);
+post.put("description", "Come for a change in scenary");
+post.saveEventually();
+```
+
+* Read
+ ```swift
+let query = PFQuery(className:"Post")
+query.whereKey("userLocation", equalTo: currentLocation)
+query.order(byDescending: "locationDistance")
+query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+   if let error = error {
+      print(error.localizedDescription)
+   } else if let posts = posts {
+      print("Successfully retrieved \(posts.count) posts.")
+      // TODO: Do something with posts...
+   }
+}
+```
+
+* Update
+    ParseQuery<ParseObject> query = ParseQuery.getQuery("GameScore");
+  
+    ```swift
+    // Retrieve the object by id
+   
+    query.getInBackground("xWMyZ4YEGZ", new GetCallback<ParseObject>() {
+        public void done(ParseObject user, ParseException e) {
+            if (e == null) {
+                // Now let's update it with some new data. In this case, only cheatMode and score
+                // will get sent to your Parse Server. playerName hasn't changed.
+                user.put("username", "Clinton");
+                user.put("role", "Data Scientist");
+                user.saveInBackground();
+            }
+        }
+    });
+  ```
+
+
+[OPTIONAL: List endpoints if using existing API such as Yelp]
