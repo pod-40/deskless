@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Deskless</string>
+
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+
+    <!-- Paste BOTH strings as required -->
+    <string name="back4app_app_id">0XFC6NFo10yfMMEt3pE3DYS9lYxq6X41Ey3sHDEb</string>
+    <string name="back4app_client_key">cDAp7F5xg59JRLK7NKx36vkdKjasp54QbpZ9ePhE</string>
+</resources>
