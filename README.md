@@ -42,22 +42,23 @@ Deskless is a social app that allows remote workers to connect with each other a
 ### 2. Screen Archetypes
 
 * Login 
-   * User can login to their profile
+   - [x] User can Sign Up
+   * [x] User can login to their profile
 
 * Homefeed/ Stream
-   * User can view events posted by other users
+   * [ ] User can view events posted by other users
 
 * Creation
-   * User can create their own events and allow others to register within its limit
+   * [ ] User can create their own events and allow others to register within its limit
 
 * Location
-   * User can search for, and/or view remote working locations
+   * [ ] User can search for, and/or view remote working locations
 
 * Profile
-   * User can create the profile based on work place, and interests
+   * [ ] User can create the profile based on work place, and interests
 
 * Setting
-   * User can update their profile
+   * [ ] User can update their profile
 
 
 ### 3. Navigation
