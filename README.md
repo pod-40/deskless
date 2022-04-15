@@ -44,6 +44,8 @@ Deskless is a social app that allows remote workers to connect with each other a
 * Login 
    - [x] User can Sign Up
    * [x] User can login to their profile
+   * [x] User Remains Logged-in
+   * [x] User can log out
 
 * Homefeed/ Stream
    * [ ] User can view events posted by other users
