@@ -46,6 +46,9 @@ Deskless is a social app that allows remote workers to connect with each other a
    * [x] User can login to their profile
    * [x] User Remains Logged-in
    * [x] User can log out
+<img src='.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 * Homefeed/ Stream
    * [ ] User can view events posted by other users
