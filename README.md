@@ -54,7 +54,9 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
    * [ ] User can view events posted by other users
 
 * Creation
-   * [ ] User can create their own events and allow others to register within its limit
+   * [x] User can create their own events and allow others to register within its limit
+   * [x] User can take photos and add it to the image description 
+   <img src='desklessPostWalkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 * Location
    * [ ] User can search for, and/or view remote working locations
