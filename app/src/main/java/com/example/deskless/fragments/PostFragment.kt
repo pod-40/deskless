@@ -60,7 +60,7 @@ class PostFragment : Fragment() {
 
 
             if (photoFile != null) {
-                submitPost(caption, user, location, ammenities, time, vibe, photoFile!!)
+                submitPost(caption, user, location, ammenities, time, vibe, photoFile!!, maxNumOfPeople)
             }else{
 
             }
@@ -77,7 +77,7 @@ class PostFragment : Fragment() {
 
 
 
-    fun submitPost(caption:String, user: ParseUser, location:String, ammenities:String, time:String, vibe:String, file: File){
+    fun submitPost(caption:String, user: ParseUser, location:String, ammenities:String, time:String, vibe:String, file: File, maxNumberOfPeople: String){
         val post = Post()
         post.setCaption(caption)
         post.setVibe(vibe)
@@ -85,7 +85,8 @@ class PostFragment : Fragment() {
         post.setAmmenities(ammenities)
         post.setUser(user)
         post.setLocation(location)
-
+        post.setMaxNumOfPeople(maxNumberOfPeople)
+        post.setImage(ParseFile(file))
         post.saveInBackground { exception ->
             if (exception != null){
                 Log.e(TAG, "Error while saving post")
